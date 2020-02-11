@@ -16,6 +16,22 @@ public class Cola_con_vectores {
      */
     public static void main(String[] args) {
         Tarea4 t4 = new Tarea4();
+        t4.estaVacio();
+        t4.encolar(5);
+        t4.encolar(2);
+        t4.encolar(8);
+        t4.encolar(1);
+        t4.encolar(9);
+        t4.desencolar();
+        /*t4.encolar(4);
+        t4.estaVacio();
+        t4.desencolar();
+        t4.encolar(3);
+        t4.encolar(4);
+        t4.encolar(6);
+        t4.encolar(7);
+        t4.encolar(9);
+        t4.encolar(0);*/
         
     }
     
