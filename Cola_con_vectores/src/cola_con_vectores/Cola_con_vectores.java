@@ -22,17 +22,43 @@ public class Cola_con_vectores {
         t4.encolar(8);
         t4.encolar(1);
         t4.encolar(9);
+        t4.recorrer();
         t4.desencolar();
-        /*t4.encolar(4);
+        t4.recorrer();
+        t4.encolar(4);
         t4.estaVacio();
+        t4.recorrer();
         t4.desencolar();
+        t4.recorrer();
         t4.encolar(3);
         t4.encolar(4);
         t4.encolar(6);
         t4.encolar(7);
         t4.encolar(9);
-        t4.encolar(0);*/
+        t4.encolar(0);
+        t4.recorrer();
+        t4.desencolar();
+        t4.recorrer();  
         
+        t4.desencolar();
+        t4.recorrer();  
+        t4.desencolar();
+        t4.recorrer();  
+        t4.desencolar();
+        t4.recorrer();  
+        t4.desencolar();
+        t4.recorrer();  
+        t4.desencolar();
+        t4.recorrer();  
+        t4.desencolar();
+        t4.recorrer(); 
+        t4.desencolar();
+        t4.recorrer();
+        t4.desencolar();
+        t4.recorrer();
+        t4.desencolar();
+        t4.recorrer();
+        t4.desencolar();
     }
     
 }

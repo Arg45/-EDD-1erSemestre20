@@ -10,15 +10,17 @@ public class Tarea4 {
     public void encolar(Object o){
         if(estaVacio()){
             Cola[0]=o;
-            System.out.println("Insertando primer elemento: "+o);
         }else{
             int i;
-            for(i=0;Cola.length<i;i++){
+            for(i=0;Cola.length>i;i++){
                 if(Cola[i]==null){
                     Cola[i]=o;
                     System.out.println("Insertado: "+o);
+                    break;
                 }else{
-                    System.out.println("Cola llena");
+                    if(Cola[9]!=null){
+                        System.out.println("Cola llena");
+                    }
                 }                
             }
         }
@@ -26,25 +28,28 @@ public class Tarea4 {
     public void desencolar(){
         int i;
         if(estaVacio()){
-            System.out.println("Cola vacia");
+            System.out.println("cola vacia");
         }else{
-            for(i=0;Cola.length<i;i++){
-                if(Cola[i]==null){
-                    System.out.println("Elemento no existente");
-                    break;
-                }else{
+            for(i=0;Cola.length>i;i++){
+                if(i+1<=9){
+                    Cola[i]=Cola[i+1];
+                }else if(i+1>9){
                     Cola[i]=null;
-                    System.out.println("borrado el ultimo elemento");
+                }else{
                     break;
-                }
-            }            
+                }            
+            }
         }
     }
     public boolean estaVacio(){
-        if(Cola[0]==null){
-            System.out.println("Cola vacia");
-            return true;
+        return Cola[0]==null;
+    }
+    
+    public void recorrer(){
+        int i;
+        for(i=0;Cola.length>i;i++){
+            System.out.println("Posicion: "+i+" valor: "+Cola[i]);
         }
-        return false;
+        System.out.println("------");
     }
 }
